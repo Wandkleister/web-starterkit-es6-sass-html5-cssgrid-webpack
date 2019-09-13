@@ -1,0 +1,28 @@
+.header {
+  &__nav {
+    width: auto;
+    height: 50px;
+    background-color: $color-gray;
+
+    &-list {
+      list-style-type: none;
+    }
+
+    &-list-link {
+      color: $color-forest;
+      text-decoration: none;
+      float: left;
+      margin-left: 25px;
+
+      &:hover {
+        color: $color-coral;
+      }
+    }
+  }
+
+  &__title {
+    color: $color-coral;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #b5bab6;
+$color-forest: #184a45;
+$color-coral: #ff6f61;
+
+$font-size-large: 56px;
+$font-size-big: 32px;
+$font-size-medium: 24px;
+$font-size-regular: 18px;
+$font-size-small: 14px;
+
+$duration-standard: 250ms;
+
+/**
+ * Keyframes
+ * */
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(320px);
+    transform: translateX(320px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(320px);
+    transform: translateX(320px);
+  }
+}
