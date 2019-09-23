@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "npm run dev:start",
     "dev:assets": "webpack --watch",
-    "dev:start": "live-server --open=./public/ --host=localhost --watch=./public/",
+    "dev:start": "live-server --open=./public/ --host=localhost --watch=./public/ --watch=./src/scripts/",
     "dev": "npm-run-all -p dev:*",
     "build": "cross-env NODE_ENV=production webpack"
   },

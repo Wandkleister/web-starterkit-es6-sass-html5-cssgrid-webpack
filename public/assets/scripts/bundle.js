@@ -94,19 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./src/scripts/utils.js\");\n\nvar baconEl = document.querySelector(\".bacon\");\nObject(_utils__WEBPACK_IMPORTED_MODULE_0__[\"GetBacon\"])().then(function (res) {\n  var markup = res.reduce(function (acc, val) {\n    return acc += \"<p>\".concat(val, \"</p>\");\n  }, \"\");\n  baconEl.innerHTML = markup;\n}).catch(function (err) {\n  return baconEl.innerHTML = err;\n});\n\n//# sourceURL=webpack:///./src/scripts/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilities */ \"./src/scripts/utilities.js\");\n// Main entry point for your JS\n// Use this file to import all your modules and to load them\n\nconsole.log(\"Main module initialized ...\");\n\n(function () {\n  _utilities__WEBPACK_IMPORTED_MODULE_0__[\"Utilities\"].init();\n})();\n\n//# sourceURL=webpack:///./src/scripts/main.js?");
 
 /***/ }),
 
-/***/ "./src/scripts/utils.js":
-/*!******************************!*\
-  !*** ./src/scripts/utils.js ***!
-  \******************************/
-/*! exports provided: GetBacon */
+/***/ "./src/scripts/utilities.js":
+/*!**********************************!*\
+  !*** ./src/scripts/utilities.js ***!
+  \**********************************/
+/*! exports provided: Utilities */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GetBacon\", function() { return GetBacon; });\nvar GetBacon = function GetBacon() {\n  var body = fetch(\"https://baconipsum.com/api/?type=all-meat&paras=3\").then(function (res) {\n    return res.json();\n  });\n  return body;\n};\n\n//# sourceURL=webpack:///./src/scripts/utils.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Utilities\", function() { return Utilities; });\n// Gives you a template on how to write modular JS\n// Simply export the module by its name\n// Don't forget to import this module in the main.js file and to call it's init function!\n// Use the settings object for attribute bindings or similar things\n// Events go to the bindEvents function\n// Todo: call super\nvar Utilities = {\n  settings: {},\n  init: function init() {\n    console.log(\"Initialize module Utilities ...\");\n    this.bindEvents();\n  },\n  bindEvents: function bindEvents() {}\n};\n\n\n//# sourceURL=webpack:///./src/scripts/utilities.js?");
 
 /***/ }),
 

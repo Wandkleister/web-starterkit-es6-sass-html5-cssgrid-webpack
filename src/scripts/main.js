@@ -1,9 +1,10 @@
-import { GetBacon } from "./utils";
-const baconEl = document.querySelector(".bacon");
+// Main entry point for your JS
+// Use this file to import all your modules and to load them
 
-GetBacon()
-  .then(res => {
-    const markup = res.reduce((acc, val) => (acc += `<p>${val}</p>`), "");
-    baconEl.innerHTML = markup;
-  })
-  .catch(err => (baconEl.innerHTML = err));
+import { Utilities } from "./utilities";
+
+console.log("Main module initialized ...");
+
+(function() {
+  Utilities.init();
+})();
